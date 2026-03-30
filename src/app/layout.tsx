@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lakshya Singh — Product Manager",
+  title: "Lakshya Singh | Product Manager",
   description:
     "Product Manager building AI-native products, with experience across B2C SaaS, life sciences B2B, and D2C e-commerce.",
 };

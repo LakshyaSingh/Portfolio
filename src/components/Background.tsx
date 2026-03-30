@@ -67,7 +67,7 @@ export function Background() {
             <div className="space-y-7">
               <div className="pl-5 border-l-2 border-black/[0.18]">
                 <p className="font-medium text-sm text-text-dark">
-                  Airbnb Case Study — Project Lead
+                  Airbnb Case Study, Project Lead
                 </p>
                 <p className="text-[0.8125rem] mt-1.5 leading-[1.65] text-muted-dark">
                   Led 4-person team to design tiered loyalty program, projecting 15% increase in bookings and $5,184 incremental revenue from high-value segment.
@@ -75,7 +75,7 @@ export function Background() {
               </div>
               <div className="pl-5 border-l-2 border-black/[0.18]">
                 <p className="font-medium text-sm text-text-dark">
-                  boAt Marketing Strategy — Research Lead
+                  boAt Marketing Strategy, Research Lead
                 </p>
                 <p className="text-[0.8125rem] mt-1.5 leading-[1.65] text-muted-dark">
                   Won The CASE Journal 2023 Best Case Award (First Runner Up) with 3 academic citations. Analyzed boAt&apos;s 208% profit increase to $6.8M.
@@ -83,7 +83,7 @@ export function Background() {
               </div>
               <div className="pl-5 border-l-2 border-black/[0.18]">
                 <p className="font-medium text-sm text-text-dark">
-                  E-Cell, IIIT — Content Team Manager
+                  E-Cell, IIIT: Content Team Manager
                 </p>
                 <p className="text-[0.8125rem] mt-1.5 leading-[1.65] text-muted-dark">
                   Grew following 50% to 600 followers, secured $20K in sponsorships (33% above target) for E-Summit 2022.
@@ -91,7 +91,7 @@ export function Background() {
               </div>
               <div className="pl-5 border-l-2 border-black/[0.18]">
                 <p className="font-medium text-sm text-text-dark">
-                  Hult Prize Foundation — Judges &amp; Participants Manager
+                  Hult Prize Foundation: Judges &amp; Participants Manager
                 </p>
                 <p className="text-[0.8125rem] mt-1.5 leading-[1.65] text-muted-dark">
                   Exceeded participation goals by 30%, recruited 3 senior executives as judges enhancing event credibility.

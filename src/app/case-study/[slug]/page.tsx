@@ -25,14 +25,14 @@ const studies: Record<
     image: "/images/anthropic-cover.png",
     pdfFile: "/case-studies/Anthropic.pdf",
     overview:
-      "A strategic analysis of Anthropic examining its competitive positioning in the Generative AI landscape. Founded by Dario and Daniela Amodei in 2021, Anthropic introduced Constitutional AI — a method to train models with embedded ethical principles — and launched Claude as its flagship AI assistant. This study covers the company's timeline from 2019 to 2023, its Jobs To Be Done, and an external threat assessment.",
+      "A strategic analysis of Anthropic examining its competitive positioning in the Generative AI landscape. Founded by Dario and Daniela Amodei in 2021, Anthropic introduced Constitutional AI, a method to train models with embedded ethical principles, and launched Claude as its flagship AI assistant. This study covers the company's timeline from 2019 to 2023, its Jobs To Be Done, and an external threat assessment.",
     problemStatement:
       "How can Anthropic maintain its competitive edge in the rapidly evolving AI landscape while staying true to its core mission of AI safety and responsible development?",
     strategicPosition:
-      "Anthropic's Constitutional AI — inspired by the UN Declaration of Human Rights — provides a unique ethical framework that positions Claude as particularly suitable for educational and enterprise use cases where safety and reliability are paramount. The company competes against well-funded incumbents like OpenAI and Google, with differentiation rooted in trust.",
+      "Anthropic's Constitutional AI, inspired by the UN Declaration of Human Rights, provides a unique ethical framework that positions Claude as particularly suitable for educational and enterprise use cases where safety and reliability are paramount. The company competes against well-funded incumbents like OpenAI and Google, with differentiation rooted in trust.",
     recommendations: [
       "Launch a Claude mobile application and connect to the web for real-time responses, integrating with e-commerce and transport apps for price comparison and cost forecasting.",
-      "Monetize through API and SDK licenses while expanding Claude to multimodal capabilities — image and voice — with integrations into developer tools like Stack Overflow, GitHub, Notion, and Jira.",
+      "Monetize through API and SDK licenses while expanding Claude to multimodal capabilities (image and voice) with integrations into developer tools like Stack Overflow, GitHub, Notion, and Jira.",
       "Collaborate with educational institutions (MIT, Harvard, Stanford, Berkeley) to leverage Constitutional AI's ethical guardrails, removing usage limits and positioning for enterprise adoption.",
     ],
     frameworks: [
@@ -105,7 +105,7 @@ const studies: Record<
     problemStatement:
       "How should Roblox evolve beyond its current adaptive gaming strategy to lead the metaverse, and what bold vision will ensure long-term success as the market matures?",
     strategicPosition:
-      "Originally employing an Adaptive strategy, Roblox must evolve into a Visionary approach. The company's user-generated content ecosystem and massive user base position it to set open standards for virtual world interoperability — but it must act before competitors claim the metaverse narrative.",
+      "Originally employing an Adaptive strategy, Roblox must evolve into a Visionary approach. The company's user-generated content ecosystem and massive user base position it to set open standards for virtual world interoperability, but it must act before competitors claim the metaverse narrative.",
     recommendations: [
       "Horizon 1 (0–1 year): Expand mobile presence with mobile-specific features, collaborate with established brands for cross-platform reach.",
       "Horizon 2 (1–3 years): Invest in AR/blockchain integration, expand audience demographics beyond younger users, diversify monetization beyond Robux.",
@@ -129,7 +129,7 @@ const studies: Record<
     problemStatement:
       "How can Snapchat maintain relevance against Meta, TikTok, and emerging platforms, and what strategic shift will enable sustainable growth beyond its core young demographic?",
     strategicPosition:
-      "Initially adopting a Visionary approach as the pioneer of ephemeral content, Snapchat must transition to a more Adaptive stance as competition intensifies. The company's AR-first identity remains its strongest differentiator — Lens Studio and virtual try-ons offer monetization paths competitors haven't matched.",
+      "Initially adopting a Visionary approach as the pioneer of ephemeral content, Snapchat must transition to a more Adaptive stance as competition intensifies. The company's AR-first identity remains its strongest differentiator: Lens Studio and virtual try-ons offer monetization paths competitors haven't matched.",
     recommendations: [
       "Horizon 1 (0–1 year): Deepen AR monetization through virtual try-ons, increase engagement and retention, address regulatory data concerns proactively.",
       "Horizon 2 (1–3 years): Create immersive AR experiences for the metaverse, expand to new markets and demographics, strengthen cross-platform partnerships.",
@@ -153,7 +153,7 @@ const studies: Record<
     problemStatement:
       "How can Best Buy differentiate against Walmart's everyday low prices and Amazon's e-commerce dominance, and what optimal marketing mix will sustain competitive advantage in consumer electronics?",
     strategicPosition:
-      "Walmart dominates through cost leadership and one-stop shopping across a broad product range. Best Buy must differentiate not on price — where Walmart wins — but on expertise, personalized customer experience, and specialized electronics services like Geek Squad.",
+      "Walmart dominates through cost leadership and one-stop shopping across a broad product range. Best Buy must differentiate not on price, where Walmart wins, but on expertise, personalized customer experience, and specialized electronics services like Geek Squad.",
     recommendations: [
       "Product: Offer personalized customer experiences, bundled discounts, protection plans, and DIY support that leverage tech expertise.",
       "Price: Maintain competitive pricing with price match guarantees while emphasizing value-added services that justify premium positioning.",

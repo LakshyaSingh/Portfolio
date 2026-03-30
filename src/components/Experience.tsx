@@ -4,7 +4,7 @@ const roles = [
     description:
       "Pre-Seed AI-native B2C SaaS platform serving professionals with LLM-powered portfolios",
     role: "Product Manager",
-    period: "Sep 2025 — Present",
+    period: "Sep 2025 – Present",
     location: "US-Remote",
     stats: [
       { value: "35%", label: "Increase in portfolio relevance" },
@@ -22,7 +22,7 @@ const roles = [
     description:
       "$3B+ life sciences B2B SaaS company serving pharma and biotech across 190+ countries",
     role: "Product Manager Intern",
-    period: "Jul 2024 — Jan 2025",
+    period: "Jul 2024 – Jan 2025",
     location: "US-Remote",
     stats: [
       { value: "20%", label: "Reduction in monthly data errors" },
@@ -39,7 +39,7 @@ const roles = [
     company: "INKHUB Tattoos",
     description: "Pre-Seed D2C e-commerce startup",
     role: "Product Manager",
-    period: "Aug 2021 — Aug 2023",
+    period: "Aug 2021 – Aug 2023",
     location: "India",
     stats: [
       { value: "5,000+", label: "Monthly active users" },
