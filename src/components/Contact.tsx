@@ -38,7 +38,7 @@ export function Contact() {
               Email Me
             </a>
             <a
-              href="https://www.linkedin.com/in/lakshyasingh/"
+              href="https://www.linkedin.com/in/ls25/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full border border-white/[0.12] text-foreground text-sm font-medium hover:bg-white/[0.04] transition-colors whitespace-nowrap"
@@ -66,7 +66,7 @@ export function Contact() {
               lakshya.s2506@gmail.com
             </a>
             <a
-              href="https://www.linkedin.com/in/lakshyasingh/"
+              href="https://www.linkedin.com/in/ls25/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[0.6875rem] text-muted/40 hover:text-muted transition-colors"
