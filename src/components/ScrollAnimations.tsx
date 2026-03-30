@@ -32,7 +32,8 @@ export function useScrollAnimations() {
               scrollTrigger: {
                 trigger: el,
                 start: "top 88%",
-                toggleActions: "play none none none",
+                end: "top 15%",
+                toggleActions: "play none none reverse",
               },
             }
           );
@@ -50,7 +51,8 @@ export function useScrollAnimations() {
               scrollTrigger: {
                 trigger: el,
                 start: "top 85%",
-                toggleActions: "play none none none",
+                end: "top 15%",
+                toggleActions: "play none none reverse",
               },
             }
           );
@@ -69,7 +71,8 @@ export function useScrollAnimations() {
               scrollTrigger: {
                 trigger: el,
                 start: "top 85%",
-                toggleActions: "play none none none",
+                end: "top 15%",
+                toggleActions: "play none none reverse",
               },
             }
           );
@@ -88,7 +91,8 @@ export function useScrollAnimations() {
               scrollTrigger: {
                 trigger: el,
                 start: "top 85%",
-                toggleActions: "play none none none",
+                end: "top 15%",
+                toggleActions: "play none none reverse",
               },
             }
           );
@@ -108,7 +112,8 @@ export function useScrollAnimations() {
               scrollTrigger: {
                 trigger: el,
                 start: "top 90%",
-                toggleActions: "play none none none",
+                end: "top 15%",
+                toggleActions: "play none none reverse",
               },
             }
           );
