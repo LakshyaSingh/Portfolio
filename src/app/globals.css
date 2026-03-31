@@ -35,7 +35,7 @@ body {
 .nav-blur {
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
-  background: rgba(0, 0, 0, 0.72);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .gradient-text {
@@ -121,6 +121,20 @@ body {
 }
 .carousel-scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+/* Pre-hide animated elements to prevent flash before GSAP initialises */
+[data-animate] {
+  opacity: 0;
+}
+[data-animate="fade-up"] {
+  transform: translateY(50px);
+}
+[data-animate="scale-in"] {
+  transform: scale(0.92);
+}
+[data-animate="stat"] {
+  transform: translateY(20px) scale(0.95);
 }
 
 /* Stat numbers */
