@@ -35,7 +35,7 @@ body {
 .nav-blur {
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(29, 29, 31, 0.72);
 }
 
 .gradient-text {
