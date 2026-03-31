@@ -91,6 +91,7 @@ function CaseStudyCard({ study }: { study: (typeof caseStudies)[number] }) {
 export function CaseStudies() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
+  const spacerRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const getCardStep = useCallback(() => {
@@ -106,16 +107,16 @@ export function CaseStudies() {
     const track = trackRef.current;
     if (!container || !track) return;
 
-    const updatePadRight = () => {
+    const updateSpacer = () => {
       const firstCard = track.querySelector<HTMLElement>("[data-card]");
-      if (!firstCard) return;
+      const spacer = spacerRef.current;
+      if (!firstCard || !spacer) return;
       const containerRect = container.getBoundingClientRect();
       const cardRect = firstCard.getBoundingClientRect();
       const padLeft = cardRect.left - containerRect.left + container.scrollLeft;
       const cardWidth = cardRect.width;
       const vw = window.innerWidth;
-      const padRight = Math.max(0, vw - padLeft - cardWidth) + 48;
-      track.style.paddingRight = `${padRight}px`;
+      spacer.style.width = `${Math.max(0, vw - padLeft - cardWidth)}px`;
     };
 
     const handleScroll = () => {
@@ -125,13 +126,13 @@ export function CaseStudies() {
       setActiveIndex(Math.max(0, Math.min(caseStudies.length - 1, idx)));
     };
 
-    updatePadRight();
+    updateSpacer();
     handleScroll();
-    window.addEventListener("resize", updatePadRight);
+    window.addEventListener("resize", updateSpacer);
     container.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
-      window.removeEventListener("resize", updatePadRight);
+      window.removeEventListener("resize", updateSpacer);
       container.removeEventListener("scroll", handleScroll);
     };
   }, [getCardStep]);
@@ -198,6 +199,7 @@ export function CaseStudies() {
               <CaseStudyCard study={study} />
             </div>
           ))}
+          <div ref={spacerRef} className="flex-shrink-0" aria-hidden="true" />
         </div>
       </div>
 
