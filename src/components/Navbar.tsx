@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 
 const navLinks = [
   { label: "Experience", href: "#experience" },
@@ -27,12 +26,16 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-[880px] mx-auto px-10 sm:px-14 md:px-16 flex items-center justify-between h-12">
-        <Link
-          href="/"
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
           className="text-xs font-semibold text-foreground/80 hover:text-foreground transition-colors"
         >
           Lakshya Singh
-        </Link>
+        </a>
 
         <div className="hidden md:flex items-center gap-7">
           {navLinks.map((link) => (
