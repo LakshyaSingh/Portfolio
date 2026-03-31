@@ -33,9 +33,9 @@ body {
 }
 
 .nav-blur {
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  background: rgba(29, 29, 31, 0.72);
+  backdrop-filter: saturate(150%) blur(10px);
+  -webkit-backdrop-filter: saturate(150%) blur(10px);
+  background: rgba(29, 29, 31, 0.55);
 }
 
 .gradient-text {
@@ -123,18 +123,10 @@ body {
   display: none;
 }
 
-/* Pre-hide animated elements to prevent flash before GSAP initialises */
+/* Pre-hide animated elements to prevent flash before GSAP initialises.
+   Uses visibility so elements still occupy layout space (no height collapse). */
 [data-animate] {
-  opacity: 0;
-}
-[data-animate="fade-up"] {
-  transform: translateY(50px);
-}
-[data-animate="scale-in"] {
-  transform: scale(0.92);
-}
-[data-animate="stat"] {
-  transform: translateY(20px) scale(0.95);
+  visibility: hidden;
 }
 
 /* Stat numbers */

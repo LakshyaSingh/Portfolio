@@ -18,8 +18,14 @@ export function useScrollAnimations() {
       const type = el.getAttribute("data-animate");
       const delay = parseFloat(el.getAttribute("data-delay") || "0");
 
+      // Make element visible once GSAP takes over (CSS hides via visibility:hidden)
+      const show = (target: Element | Element[] | HTMLCollection) => {
+        gsap.set(target, { visibility: "visible" });
+      };
+
       switch (type) {
         case "fade-up":
+          show(el);
           gsap.fromTo(
             el,
             { opacity: 0, y: 50 },
@@ -40,6 +46,7 @@ export function useScrollAnimations() {
           break;
 
         case "fade-in":
+          show(el);
           gsap.fromTo(
             el,
             { opacity: 0 },
@@ -59,6 +66,7 @@ export function useScrollAnimations() {
           break;
 
         case "scale-in":
+          show(el);
           gsap.fromTo(
             el,
             { opacity: 0, scale: 0.92 },
@@ -79,6 +87,7 @@ export function useScrollAnimations() {
           break;
 
         case "stagger":
+          show(el.children);
           gsap.fromTo(
             el.children,
             { opacity: 0, y: 30 },
@@ -99,6 +108,7 @@ export function useScrollAnimations() {
           break;
 
         case "stat":
+          show(el);
           gsap.fromTo(
             el,
             { opacity: 0, y: 20, scale: 0.95 },
