@@ -109,9 +109,11 @@ export function CaseStudies() {
     const updatePadRight = () => {
       const firstCard = track.querySelector<HTMLElement>("[data-card]");
       if (!firstCard) return;
-      const padLeft = parseFloat(getComputedStyle(track).paddingLeft);
-      const cardWidth = firstCard.offsetWidth;
-      const padRight = Math.max(0, container.clientWidth - padLeft - cardWidth) + 4;
+      const containerRect = container.getBoundingClientRect();
+      const cardRect = firstCard.getBoundingClientRect();
+      const padLeft = cardRect.left - containerRect.left + container.scrollLeft;
+      const cardWidth = cardRect.width;
+      const padRight = Math.max(0, container.clientWidth - padLeft - cardWidth) + 48;
       track.style.paddingRight = `${padRight}px`;
     };
 
