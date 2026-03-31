@@ -55,7 +55,7 @@ function CaseStudyCard({ study }: { study: (typeof caseStudies)[number] }) {
           alt={study.title}
           fill
           className="card-image object-cover object-center"
-          sizes="(max-width: 768px) 75vw, 480px"
+          sizes="(max-width: 768px) 75vw, 720px"
         />
         <div className="card-overlay absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
@@ -189,7 +189,7 @@ export function CaseStudies() {
             <div
               key={study.slug}
               data-card
-              className="w-[75vw] sm:w-[60vw] md:w-[480px] flex-shrink-0"
+              className="w-[75vw] sm:w-[65vw] md:w-[min(720px,calc(100vw-200px))] flex-shrink-0"
               style={{ scrollSnapAlign: "start" }}
             >
               <CaseStudyCard study={study} />
