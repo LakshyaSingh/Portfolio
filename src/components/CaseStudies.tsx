@@ -111,7 +111,7 @@ export function CaseStudies() {
       if (!firstCard) return;
       const padLeft = parseFloat(getComputedStyle(track).paddingLeft);
       const cardWidth = firstCard.offsetWidth;
-      const padRight = Math.max(0, container.clientWidth - padLeft - cardWidth);
+      const padRight = Math.max(0, container.clientWidth - padLeft - cardWidth) + 4;
       track.style.paddingRight = `${padRight}px`;
     };
 
