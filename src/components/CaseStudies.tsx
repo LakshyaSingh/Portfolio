@@ -113,7 +113,8 @@ export function CaseStudies() {
       const cardRect = firstCard.getBoundingClientRect();
       const padLeft = cardRect.left - containerRect.left + container.scrollLeft;
       const cardWidth = cardRect.width;
-      const padRight = Math.max(0, container.clientWidth - padLeft - cardWidth) + 48;
+      const vw = window.innerWidth;
+      const padRight = Math.max(0, vw - padLeft - cardWidth) + 48;
       track.style.paddingRight = `${padRight}px`;
     };
 
